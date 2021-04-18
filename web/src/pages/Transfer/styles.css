@@ -1,0 +1,138 @@
+#page-main {
+    background: #212121;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+#page-main header{
+    padding: 10px;
+    color: #D6B579;
+}
+
+
+#page-main main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+#page-main main > div{
+    background-color: white;
+    border-radius: 20px;
+    width: 90%;
+    padding: 4%;
+    height: 90%;
+    overflow-y: auto;
+}
+
+#page-main main div > ul > li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    border: 2px solid #212121;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#page-main main div > ul > li > .data-client-box{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 80%;
+}
+
+#page-main main div > ul > li > .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 20%;
+} 
+
+#page-main main div > ul > li > .buttons > button{
+    padding: 10px 35px;
+    margin-left: 10px;
+}
+
+#page-main main div > ul > li > .buttons > button > svg{
+    margin-right: 5px;
+}
+
+#page-main main div > ul > li > div > .data-client{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#page-main main div > ul > li > div > .data-client{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#page-main main div > ul > li > div > .data-client > .title{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+#page-main main div > ul > li > div > ol{
+    margin-top: 20px;
+}
+
+#page-main main div > ul > li > div > ol > li{
+    margin-left: 50px;
+    margin-bottom: 5px;
+}
+#page-main main div > .button{
+    color: #222222;
+    background: #D6B579;
+    padding: 10px;
+    text-decoration: none;
+    margin-right: 10px;
+    border-radius: 6px;
+
+}
+
+#page-main main div > .button b{
+    margin-right: 8px;
+
+}
+
+#page-main .modal{
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    width: 50%;
+    height: 50%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    background: #D6B579;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(-50%);
+    visibility: hidden;
+}
+
+#page-main .modal._show{
+    position: absolute;
+    opacity: 1;
+    visibility: visible;
+}
+
+#page-main .modal h3{
+    color: #212121;
+    margin: 10px;
+}
